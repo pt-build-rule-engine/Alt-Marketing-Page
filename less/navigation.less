@@ -1,0 +1,43 @@
+.nav-bar {
+    display        : flex;
+    justify-content: space-between;
+
+    height    : 18vh;
+    width     : 100%;
+    background: @secondary-color;
+
+}
+p{
+    align-self: center;
+}
+.rule-engine-logo {
+    width      : 160px;
+    height     : 150px;
+    margin-left: 2%;
+}
+
+h1 {
+    /*width: 60%;*/
+    .flex-center();
+    font-size: 3.2rem;
+    align-self: center;
+}
+
+nav {
+    
+    .flex-center();
+    flex-direction : row;
+    justify-content: space-around;
+    width: 30%;
+
+    a {
+        color    : black;
+
+
+        &:hover {
+            color: @main-color;
+        }
+    }
+
+
+}

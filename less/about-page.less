@@ -1,0 +1,171 @@
+header {
+    height: 50vh;
+    width: 100%;
+    position: relative;
+    background-image: url("./img/about-banner.jpeg");
+    background-size: cover;
+    font-family: 'Poller One', cursive;
+    background-color:@mainBG-color;
+    display: flex;
+    flex-direction: column;
+   /* .about-banner {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        align-self: center;
+        top:0;
+        bottom: 0;
+        
+        overflow: hidden;
+    }*/
+    .about-us-heading {
+    margin-top: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1000;
+    position: relative;
+    width: 80%;
+    h1 {
+        font-size: 3rem;
+        text-align: center;
+        font-family: 'Poller One', cursive;
+    }
+    }
+}
+
+//first section
+.intro-about-section {
+    background-color: @box-color;
+    .flex-center();
+    .intro-text-wrap {
+        width: 45%;
+        padding: 1em;
+        .about-cta{
+            .button(20%, 2em, @header-color);
+            &:hover{
+                .button(22%, 2.1em, @secondary-color);
+            }
+            a {
+                color: @main-color;
+                &:hover{
+                color: #000;
+                }
+            }
+        }
+        h2{
+            padding: 2em 0 4px 0;
+            font-size: 2rem;
+
+        }
+        h4{
+            padding-bottom: 1em;
+        }
+        
+        p {
+            margin-bottom: 1.6em;
+            padding-top:.5em;
+        }
+    }
+    .info-container{
+        width: 45%;
+        padding: 1em;
+        position: relative;
+    
+        .welcome-image {
+                 margin-left: 5em;
+                width: 85%;
+                height: 300px;
+              
+            }
+    }
+}
+
+//gallery row
+.gallery-row-wrap {
+    background-color:@mainBG-color;
+    .flex-center();
+    padding: 1em;
+
+    .gallery-item {
+         width: 30%;
+         height: 350px;
+         background-color: @box-color;
+         margin: .6em;
+        padding: .6em;
+      .flex-col();
+      align-items: center;
+      justify-content: center;
+     a
+
+      p {
+        padding: .8em 0 .5em 0;
+        font-size: 1em;
+    
+       }
+    }
+
+    .gallery-item div{
+        width: 100%;
+        height: 100%;
+        .flex-col();
+        align-items: center;
+        img {
+          width: 100%;
+           height: auto;
+            overflow: hidden;
+           
+        }
+    }
+}
+
+//about page cta #2
+.call-to-action {
+    text-align: center;
+    h3 {
+        padding: 1em;
+        margin-top: 1em;
+    }
+    p{
+        padding: 1em;
+    }
+}
+.about-cta{
+    .button(10%, 2em, @header-color);
+    margin: 1em 1em 4em 1em;
+    &:hover{
+        .button(12%, 2.1em, @secondary-color);
+    }
+    a {
+        color: @main-color;
+        &:hover{
+        color: #000;
+        }
+    }
+}
+
+//team bios
+.about-team-members {
+    .flex-center();
+     flex-wrap: wrap;
+     padding: 10vh 0 10vh 0;
+    .team-member-container {
+        .flex-center();
+
+    }
+    .team-member-info {
+     width: 45%;
+     padding: .5em;
+     h3, h4 {
+         padding: .6em;
+     }
+    }
+
+    .team-member-photo{
+        width: 50%;
+        .flex-center();
+
+        img{
+            width:80%;
+        }
+    }
+}
