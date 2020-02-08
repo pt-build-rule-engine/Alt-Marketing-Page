@@ -474,7 +474,7 @@ header .about-us-heading h1 {
 }
 .gallery-row-wrap .gallery-item {
   width: 30%;
-  height: 350px;
+  height: auto;
   background-color: #a8bbb0;
   margin: 0.6em;
   padding: 0.6em;
@@ -495,9 +495,14 @@ header .about-us-heading h1 {
     height: auto;
   }
 }
+.gallery-row-wrap .gallery-item h3 {
+  padding: 2em 0 0.5em 0;
+  font-size: 1.2em;
+  text-align: center;
+}
 .gallery-row-wrap .gallery-item p {
-  padding: 1em 0 0.5em 0;
-  font-size: 1em;
+  text-align: center;
+  padding: 1em;
 }
 .gallery-row-wrap .gallery-item div {
   width: 100%;
@@ -607,6 +612,11 @@ header .about-us-heading h1 {
 .about-team-members .team-member-info h3,
 .about-team-members .team-member-info h4 {
   padding: 0.6em;
+  font-weight: 800;
+  font-size: 1.3em;
+}
+.about-team-members .team-member-info p {
+  padding: 1em;
 }
 .about-team-members .team-member-photo {
   width: 50%;
