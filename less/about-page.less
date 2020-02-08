@@ -4,7 +4,7 @@ header {
     position: relative;
     background-image: url("./img/about-banner.jpeg");
     background-size: cover;
-    font-family: 'Poller One', cursive;
+    font-family: @paragraph-font;
     background-color:@mainBG-color;
     display: flex;
     flex-direction: column;
@@ -28,7 +28,7 @@ header {
     h1 {
         font-size: 3rem;
         text-align: center;
-        font-family: 'Poller One', cursive;
+        font-family: @main-font;
     }
     }
 }
@@ -195,6 +195,7 @@ header {
 
 //team bios
 .about-team-members {
+    font-family: @paragraph-font;
     .flex-center();
      flex-wrap: wrap;
      padding: 10vh 0 10vh 0;
