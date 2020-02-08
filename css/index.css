@@ -369,6 +369,7 @@ header .about-us-heading h1 {
 }
 .intro-about-section {
   background-color: #a8bbb0;
+  font-family: 'Fira Sans', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -416,6 +417,7 @@ header .about-us-heading h1 {
 .intro-about-section .intro-text-wrap h2 {
   padding: 2em 0 4px 0;
   font-size: 2rem;
+  font-family: 'Poller One', cursive;
 }
 .intro-about-section .intro-text-wrap h4 {
   padding-bottom: 1em;
@@ -506,6 +508,7 @@ header .about-us-heading h1 {
   padding: 2em 0 0.5em 0;
   font-size: 1.2em;
   text-align: center;
+  font-weight: 800;
 }
 .gallery-row-wrap .gallery-item p {
   text-align: center;
@@ -530,6 +533,8 @@ header .about-us-heading h1 {
 .call-to-action h3 {
   padding: 1em;
   margin-top: 1em;
+  font-weight: 800;
+  font-family: 'Poller One', cursive;
 }
 .call-to-action p {
   padding: 1em;
