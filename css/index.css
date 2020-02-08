@@ -156,12 +156,16 @@ h2 {
   font-size: 2rem;
   color: #0a0a00;
 }
+p {
+  font-family: 'Fira Sans', sans-serif;
+}
 .nav-bar {
   display: flex;
   justify-content: space-between;
   height: 18vh;
   width: 100%;
   background: #D01110;
+  font-family: 'Fira Sans', sans-serif;
 }
 @media (max-width: 500px) {
   .nav-bar {
@@ -281,6 +285,7 @@ footer p {
   justify-content: space-around;
   width: 100%;
   padding: 10vh 0 10vh 0;
+  font-family: 'Fira Sans', sans-serif;
 }
 @media (max-width: 800px) {
   .contact-information {
@@ -334,7 +339,7 @@ header {
   position: relative;
   background-image: url("./img/about-banner.jpeg");
   background-size: cover;
-  font-family: 'Poller One', cursive;
+  font-family: 'Fira Sans', sans-serif;
   background-color: #b8b6b6;
   display: flex;
   flex-direction: column;
@@ -561,6 +566,7 @@ header .about-us-heading h1 {
   }
 }
 .about-team-members {
+  font-family: 'Fira Sans', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
