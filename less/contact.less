@@ -4,17 +4,31 @@
     justify-content: space-around;
     width: 100%;
     padding: 10vh 0 10vh 0;
-
+    @media @tablet {
+        .flex-col();
+        justify-content: center;
+        align-items: center;
+    }
     .contact-list-wrap{
+        @media @tablet {
+        }
        h4{
            padding: 1em;
+           @media @tablet {
+               text-align: center;
+        }
        }
        ul {
            padding-left: 3em;
+           @media @tablet {
+            text-align: center;
+            padding-left: 0;
+     }
        }
        ul li {
            padding: .5em;
            list-style: disc;
+           @media @tablet {list-style: none;}
            a {
                text-decoration: none;
            }
@@ -22,6 +36,12 @@
     }
    .contact-page-image {
        width: 40%;
+       @media @tablet {
+           width: 50%;
+           padding-top: 2em;
+    
+    
+    }
    }
 
 }

@@ -37,9 +37,19 @@ header {
 .intro-about-section {
     background-color: @box-color;
     .flex-center();
+    @media @mobile {
+        .flex-col();
+        align-items: center;
+    }
+    @media @tablet {
+        .flex-col();
+    }
     .intro-text-wrap {
         width: 45%;
         padding: 1em;
+        @media @tablet {
+            width: 80%;
+        }
         .about-cta{
             .button(20%, 2em, @header-color);
             &:hover{
@@ -70,11 +80,27 @@ header {
         width: 45%;
         padding: 1em;
         position: relative;
+        @media @mobile {
+            width: 80%;
+            margin:1em;
+        }
+        @media @tablet {
+            width: 90%;
+            margin:1em;
+        }
     
         .welcome-image {
                  margin-left: 5em;
                 width: 85%;
                 height: 300px;
+                @media @mobile {
+                    width: 100%;
+                    margin:0;
+                }
+                @media @tablet {
+                    width: 100%;
+                    margin:0;
+                }
               
             }
     }
@@ -85,20 +111,33 @@ header {
     background-color:@mainBG-color;
     .flex-center();
     padding: 1em;
-
+    @media @mobile {
+        .flex-col();
+    }
+    @media @tablet {
+        .flex-col();
+    }
     .gallery-item {
          width: 30%;
          height: 350px;
          background-color: @box-color;
          margin: .6em;
         padding: .6em;
+        align-items: center;
+        justify-content: center;
+       
       .flex-col();
-      align-items: center;
-      justify-content: center;
-     a
+      @media @mobile {
+        width: 80%;
+        height: auto;
+    }
+    @media @tablet {
+        width: 90%;
+        height: auto;
+    }
 
       p {
-        padding: .8em 0 .5em 0;
+        padding: 1em 0 .5em 0;
         font-size: 1em;
     
        }
@@ -141,6 +180,12 @@ header {
         color: #000;
         }
     }
+    @media @mobile {
+        .button(30%, 2em, @header-color);
+    }
+    @media @tablet {
+        .button(30%, 2em, @header-color);
+    }
 }
 
 //team bios
@@ -148,10 +193,29 @@ header {
     .flex-center();
      flex-wrap: wrap;
      padding: 10vh 0 10vh 0;
-    .team-member-container {
+   
+    .team-member-container-1 {
         .flex-center();
-
+        @media @mobile {
+            .flex-col();
+            padding: 1em 0 1em 0;
+        }
     }
+    .team-member-container-2 {
+            .flex-center();
+            @media @mobile {
+                .flex-col();
+                flex-direction: column-reverse;
+                padding: 1em 0 1em 0;
+            }
+    }
+    .team-member-container-3 {
+        .flex-center();
+        @media @mobile {
+            .flex-col();
+            padding: 1em 0 1em 0;
+        }
+    } 
     .team-member-info {
      width: 45%;
      padding: .5em;
@@ -163,7 +227,9 @@ header {
     .team-member-photo{
         width: 50%;
         .flex-center();
-
+        @media @mobile {
+            padding: 2em 0 2em 0;
+        }
         img{
             width:80%;
         }

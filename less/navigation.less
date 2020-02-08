@@ -5,17 +5,45 @@
     height    : 18vh;
     width     : 100%;
     background: @secondary-color;
-
+    @media @mobile {
+        flex-direction: column;
+        height    : auto;
+        justify-content: center;
+        align-items: center;
+     }
+     @media @tablet {
+         .flex-col();
+         justify-content: center;
+         align-items: center;
+         height    : auto;
+     }
 }
 p{
     align-self: center;
 }
+.engine-logo-wrap{
+  @media @mobile {
+      .flex-col();
+      align-items: center;
+  }
+  @media @tablet{
+    .flex-col();
+    align-items: center;
+ }
 .rule-engine-logo {
     width      : 160px;
     height     : 150px;
     margin-left: 2%;
+    @media @mobile {
+        width      : 50%;
+        height     : 50%;
+     }
+     @media @tablet{
+        width      : 50%;
+        height     : 50%;
+     }
 }
-
+}
 h1 {
     /*width: 60%;*/
     .flex-center();
@@ -29,14 +57,24 @@ nav {
     flex-direction : row;
     justify-content: space-around;
     width: 30%;
-
+    @media @mobile {
+        flex-direction: column;
+     }
+     @media @tablet {
+        flex-direction: column;
+     }
     a {
         color    : black;
-
+        @media @mobile {
+           padding: 1em 0 1em 0;
+         }
 
         &:hover {
             color: @main-color;
         }
+        @media @tablet {
+            padding: 1em 0 1em 0;
+         }
     }
 
 
