@@ -12,7 +12,7 @@
         height    : auto;
         justify-content: center;
         align-items: center;
-        padding-bottom: 1em;
+       margin-bottom: -15px;
      }
      @media @tablet {
          .flex-col();
@@ -22,6 +22,7 @@
          padding-bottom: 1em;
      }
 }
+
 p{
     align-self: center;
 }
@@ -63,19 +64,29 @@ nav {
     width: 30%;
     @media @mobile {
         flex-direction: column;
+        width: 100%;
      }
      @media @tablet {
         flex-direction: column;
      }
     a {
         color    : black;
-        @media @mobile {
-           padding: 1em 0 1em 0;
-         }
-
         &:hover {
             color: @main-color;
         }
+        @media @mobile {
+           padding: 1em 0 1em 0;
+           
+           border-top: 1px solid @header-color;
+           width: 100%;
+           text-align: center;
+        &:hover {
+            color: @main-color;
+            background-color: @box-color ;
+        }
+         }
+
+    
         @media @tablet {
             padding: 1em 0 1em 0;
          }
