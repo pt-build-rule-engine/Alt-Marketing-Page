@@ -430,6 +430,9 @@ header .about-us-heading h1 {
   width: 45%;
   padding: 1em;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media (max-width: 500px) {
   .intro-about-section .info-container {
@@ -445,7 +448,7 @@ header .about-us-heading h1 {
 }
 .intro-about-section .info-container .welcome-image {
   margin-left: 5em;
-  width: 85%;
+  width: auto;
   height: 300px;
 }
 @media (max-width: 500px) {
