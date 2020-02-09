@@ -1,13 +1,3 @@
-.flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.flex-col {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 .spacing {
   padding: 2%;
   margin: 2%;
@@ -142,6 +132,7 @@ table {
 }
 .homePage {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -149,15 +140,27 @@ table {
 .homePage .main-content,
 .homePage .secondary-content {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+h1 {
+  font-size: 3.2rem;
 }
 h2 {
   font-size: 2rem;
   color: #0a0a00;
 }
+h3,
+h4 {
+  font-size: 1.3em;
+}
 p {
   font-family: 'Fira Sans', sans-serif;
+}
+a {
+  font-size: 1.1em;
+  text-decoration: none;
 }
 .nav-bar {
   display: flex;
@@ -184,7 +187,7 @@ p {
     justify-content: center;
     align-items: center;
     height: auto;
-    padding-bottom: 1em;
+    padding: 1em 0 1em 0;
   }
 }
 p {
@@ -208,7 +211,7 @@ p {
 }
 .engine-logo-wrap .rule-engine-logo {
   width: auto;
-  padding-bottom: 1em;
+  padding: 1em 0 1em 0;
   margin-left: 2%;
 }
 @media (max-width: 500px) {
@@ -226,16 +229,16 @@ p {
 h1 {
   /*width: 60%;*/
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 3.2rem;
   align-self: center;
 }
 nav {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
   justify-content: space-around;
   width: 30%;
 }
@@ -255,17 +258,22 @@ nav a {
 }
 nav a:hover {
   color: #ebe8e0;
+  border-bottom: 2px solid #0a0a00;
+  border-top: 2px solid #0a0a00;
+  padding: 3% 0;
+  margin-bottom: -3% 0;
 }
 @media (max-width: 500px) {
   nav a {
     padding: 1em 0 1em 0;
-    border-top: 1px solid #0a0a00;
+    border-top: 2px solid #0a0a00;
     width: 100%;
     text-align: center;
   }
   nav a:hover {
     color: #ebe8e0;
     background-color: #a8bbb0;
+    border-bottom: none;
   }
 }
 @media (max-width: 800px) {
@@ -279,16 +287,18 @@ footer {
   width: 100%;
   height: 80px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 footer p {
   align-self: center;
-  padding: 1.8em 0 1.8em 0;
+  padding: 1em 0 1em 0;
 }
 .contact-information {
   background-color: #a8bbb0;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   justify-content: space-around;
@@ -303,6 +313,10 @@ footer p {
     justify-content: center;
     align-items: center;
   }
+}
+.contact-information .contact-list-wrap h2 {
+  text-align: center;
+  padding: 1em 0 1em 0;
 }
 .contact-information .contact-list-wrap h4 {
   padding: 1em;
@@ -339,45 +353,31 @@ footer p {
 }
 .contact-information .contact-page-image {
   width: 40%;
+  border: 2px solid #0a0a00;
 }
 @media (max-width: 800px) {
   .contact-information .contact-page-image {
     width: 50%;
-    padding-top: 2em;
+    margin-top: 2em;
   }
 }
 header {
   height: 50vh;
   width: 100%;
-  position: relative;
   background-image: url("../img/buildings.jpg");
   background-size: cover;
   background-position: bottom;
   font-family: 'Fira Sans', sans-serif;
   background-color: #ebe8e0;
   display: flex;
-  flex-direction: column;
-  /* .about-banner {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        align-self: center;
-        top:0;
-        bottom: 0;
-        
-        overflow: hidden;
-    }*/
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 header .about-us-heading {
-  margin-top: 20vh;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 1000;
-  position: relative;
   width: 80%;
 }
 header .about-us-heading h1 {
-  font-size: 3rem;
   text-align: center;
   font-family: 'Poller One', cursive;
 }
@@ -385,6 +385,7 @@ header .about-us-heading h1 {
   background-color: #a8bbb0;
   font-family: 'Fira Sans', sans-serif;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -401,6 +402,7 @@ header .about-us-heading h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 }
 .intro-about-section .intro-text-wrap {
@@ -426,11 +428,10 @@ header .about-us-heading h1 {
   color: #ebe8e0;
 }
 .intro-about-section .intro-text-wrap .about-cta a:hover {
-  color: #000;
+  color: #0a0a00;
 }
 .intro-about-section .intro-text-wrap h2 {
   padding: 2em 0 4px 0;
-  font-size: 2rem;
   font-family: 'Poller One', cursive;
 }
 .intro-about-section .intro-text-wrap h4 {
@@ -445,8 +446,9 @@ header .about-us-heading h1 {
   padding: 1em;
   position: relative;
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 @media (max-width: 500px) {
   .intro-about-section .info-container {
@@ -464,22 +466,24 @@ header .about-us-heading h1 {
   margin-left: 5em;
   width: auto;
   height: 300px;
+  border: 2px solid #0a0a00;
 }
 @media (max-width: 500px) {
   .intro-about-section .info-container .welcome-image {
     width: 100%;
     margin: 0;
+    height: auto;
   }
 }
 @media (max-width: 800px) {
   .intro-about-section .info-container .welcome-image {
-    width: 100%;
     margin: 0;
   }
 }
 .gallery-row-wrap {
   background-color: #b8b6b6;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 1em;
@@ -489,6 +493,7 @@ header .about-us-heading h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 }
 @media (max-width: 800px) {
@@ -496,6 +501,7 @@ header .about-us-heading h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 }
 .gallery-row-wrap .gallery-item {
@@ -505,10 +511,10 @@ header .about-us-heading h1 {
   border: 2px solid #0a0a00;
   padding: 0.6em;
   margin: 0.6em;
-  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 @media (max-width: 500px) {
   .gallery-row-wrap .gallery-item {
@@ -524,7 +530,6 @@ header .about-us-heading h1 {
 }
 .gallery-row-wrap .gallery-item h3 {
   padding: 2em 0 0.5em 0;
-  font-size: 1.2em;
   text-align: center;
   font-weight: 800;
 }
@@ -553,44 +558,47 @@ header .about-us-heading h1 {
   margin-top: 1em;
   font-weight: 800;
   font-family: 'Poller One', cursive;
+  font-size: 1.6em;
 }
 .call-to-action p {
   padding: 1em;
 }
 .about-cta {
-  width: 10%;
-  height: 2em;
+  width: 20%;
+  height: 4em;
   background-color: #0a0a00;
   margin: 1em 1em 4em 1em;
 }
 .about-cta:hover {
-  width: 12%;
-  height: 2.1em;
+  width: 30%;
+  height: 3.5em;
   background-color: #D01110;
 }
 .about-cta a {
+  font-size: 1.5em;
   color: #ebe8e0;
 }
 .about-cta a:hover {
-  color: #000;
+  color: #0a0a00;
 }
 @media (max-width: 500px) {
   .about-cta {
     width: 30%;
-    height: 2em;
+    height: 3em;
     background-color: #0a0a00;
   }
 }
 @media (max-width: 800px) {
   .about-cta {
     width: 30%;
-    height: 2em;
+    height: 3em;
     background-color: #0a0a00;
   }
 }
 .about-team-members {
   font-family: 'Fira Sans', sans-serif;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -598,6 +606,7 @@ header .about-us-heading h1 {
 }
 .about-team-members .team-member-container-1 {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -606,11 +615,13 @@ header .about-us-heading h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 1em 0 1em 0;
   }
 }
 .about-team-members .team-member-container-2 {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -619,12 +630,14 @@ header .about-us-heading h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     flex-direction: column-reverse;
     padding: 1em 0 1em 0;
   }
 }
 .about-team-members .team-member-container-3 {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -633,6 +646,7 @@ header .about-us-heading h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 1em 0 1em 0;
   }
 }
@@ -649,7 +663,6 @@ header .about-us-heading h1 {
 .about-team-members .team-member-info h4 {
   padding: 0.6em;
   font-weight: 800;
-  font-size: 1.3em;
 }
 .about-team-members .team-member-info p {
   padding: 1em;
@@ -657,12 +670,13 @@ header .about-us-heading h1 {
 .about-team-members .team-member-photo {
   width: 50%;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 @media (max-width: 500px) {
   .about-team-members .team-member-photo {
-    padding: 2em 0 2em 0;
+    padding: 1em 0 1em 0;
   }
 }
 .about-team-members .team-member-photo img {

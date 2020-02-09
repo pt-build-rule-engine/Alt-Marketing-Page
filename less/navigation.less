@@ -15,11 +15,11 @@
        margin-bottom: -15px;
      }
      @media @tablet {
-         .flex-col();
+        .flex-container(flex, column, center, center);
          justify-content: center;
          align-items: center;
          height    : auto;
-         padding-bottom: 1em;
+         padding: @padding-top-bottom;
      }
 }
 
@@ -28,16 +28,16 @@ p{
 }
 .engine-logo-wrap{
   @media @mobile {
-      .flex-col();
+    .flex-container(flex, column, center, center);
       align-items: center;
   }
   @media @tablet{
-    .flex-col();
+    .flex-container(flex, column, center, center);
     align-items: center;
  }
 .rule-engine-logo {
     width      : auto;
-   padding-bottom: 1em;
+    padding: @padding-top-bottom;
     margin-left: 2%;
     @media @mobile {
         width      : 50%;
@@ -51,15 +51,13 @@ p{
 }
 h1 {
     /*width: 60%;*/
-    .flex-center();
-    font-size: 3.2rem;
+    .flex-container(flex, row, center, center);
     align-self: center;
 }
 
 nav {
     
-    .flex-center();
-    flex-direction : row;
+    .flex-container(flex, row, center, center);
     justify-content: space-around;
     width: 30%;
     @media @mobile {
@@ -73,22 +71,27 @@ nav {
         color    : black;
         &:hover {
             color: @main-color;
+            border-bottom: @border-style;
+            border-top: @border-style;
+            padding: 3% 0;
+            margin-bottom: -3% 0;
         }
         @media @mobile {
-           padding: 1em 0 1em 0;
+            padding: @padding-top-bottom;
            
-           border-top: 1px solid @header-color;
+           border-top:   @border-style;
            width: 100%;
            text-align: center;
         &:hover {
             color: @main-color;
             background-color: @box-color ;
+            border-bottom: none;
         }
          }
 
     
         @media @tablet {
-            padding: 1em 0 1em 0;
+            padding: @padding-top-bottom;
          }
     }
 
