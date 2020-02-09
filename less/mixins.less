@@ -3,19 +3,15 @@
     height: @h;
     background-color: @bc;
 }
-
-.flex-center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}  
-.flex-col{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.flex-container (@d, @fd, @jc, @align) {
+    display: @d;
+    flex-direction: @fd;
+    justify-content: @jc;
+    align-items: @align ;
 }
 
 .spacing{
     padding: 2%;
     margin: 2%;
 }
+

@@ -1,18 +1,19 @@
 .contact-information {
     background-color: @box-color;
-    .flex-center();
+    .flex-container(flex, row, center, center);
     justify-content: space-around;
     width: 100%;
     padding: 10vh 0 10vh 0;
     font-family: @paragraph-font;
     @media @tablet {
-        .flex-col();
-        justify-content: center;
-        align-items: center;
+        .flex-container(flex, column, center, center);
     }
     .contact-list-wrap{
-        @media @tablet {
-        }
+       h2 {
+           text-align: center;
+          
+          padding: @padding-top-bottom;
+       }
        h4{
            padding: 1em;
            @media @tablet {
@@ -21,10 +22,10 @@
        }
        ul {
            padding-left: 3em;
-           @media @tablet {
+            @media @tablet {
             text-align: center;
             padding-left: 0;
-     }
+         }
        }
        ul li {
            padding: .5em;
@@ -41,11 +42,10 @@
     }
    .contact-page-image {
        width: 40%;
+       border: @border-style;
        @media @tablet {
            width: 50%;
-           padding-top: 2em;
-    
-    
+           margin-top: 2em;
     }
    }
 

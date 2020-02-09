@@ -1,16 +1,26 @@
 .homePage{
     
-    .flex-center();
+    .flex-container(flex, row, center, center);
     flex-direction: column;
     .main-content, .secondary-content{
-        .flex-center();
+        .flex-container(flex,row, center, center);
     }
+}
+h1 {
+    font-size: 3.2rem;
 }
 h2{
     font-size: 2rem;
     color: @header-color;
 }
+h3, h4 {
+    font-size: 1.3em;
+}
 
 p {
     font-family: @paragraph-font;
+}
+a {
+    font-size: 1.1em;
+    text-decoration: none;
 }
