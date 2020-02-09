@@ -435,7 +435,7 @@ header .about-us-heading h1 {
   font-family: 'Poller One', cursive;
 }
 .intro-about-section .intro-text-wrap h4 {
-  padding-bottom: 1em;
+  padding: 1em 0 1em 0;
 }
 .intro-about-section .intro-text-wrap p {
   margin-bottom: 1.6em;
