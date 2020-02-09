@@ -164,6 +164,7 @@ p {
   justify-content: space-between;
   height: 18vh;
   width: 100%;
+  padding-bottom: 3em;
   background: #D01110;
   font-family: 'Fira Sans', sans-serif;
 }
@@ -206,8 +207,8 @@ p {
   }
 }
 .engine-logo-wrap .rule-engine-logo {
-  width: 160px;
-  height: 150px;
+  width: auto;
+  padding-bottom: 1em;
   margin-left: 2%;
 }
 @media (max-width: 500px) {
@@ -323,6 +324,10 @@ footer p {
 }
 .contact-information .contact-list-wrap ul li a {
   text-decoration: none;
+  color: #D01110;
+}
+.contact-information .contact-list-wrap ul li a:hover {
+  color: #0a0a00;
 }
 .contact-information .contact-page-image {
   width: 40%;
@@ -337,10 +342,11 @@ header {
   height: 50vh;
   width: 100%;
   position: relative;
-  background-image: url("./img/about-banner.jpeg");
+  background-image: url("../img/buildings.jpg");
   background-size: cover;
+  background-position: bottom;
   font-family: 'Fira Sans', sans-serif;
-  background-color: #b8b6b6;
+  background-color: #ebe8e0;
   display: flex;
   flex-direction: column;
   /* .about-banner {
@@ -485,11 +491,12 @@ header .about-us-heading h1 {
   }
 }
 .gallery-row-wrap .gallery-item {
-  width: 30%;
+  width: 29%;
   height: auto;
   background-color: #a8bbb0;
-  margin: 0.6em;
+  border: 2px solid #0a0a00;
   padding: 0.6em;
+  margin: 0.6em;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -652,4 +659,5 @@ header .about-us-heading h1 {
 }
 .about-team-members .team-member-photo img {
   width: 80%;
+  border: 2px solid #0a0a00;
 }

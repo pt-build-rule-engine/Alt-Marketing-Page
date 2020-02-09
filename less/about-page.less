@@ -2,10 +2,11 @@ header {
     height: 50vh;
     width: 100%;
     position: relative;
-    background-image: url("./img/about-banner.jpeg");
+    background-image: url("../img/buildings.jpg");
     background-size: cover;
+    background-position:bottom;
     font-family: @paragraph-font;
-    background-color:@mainBG-color;
+    background-color:@main-color;
     display: flex;
     flex-direction: column;
    /* .about-banner {
@@ -122,11 +123,12 @@ header {
         .flex-col();
     }
     .gallery-item {
-         width: 30%;
+         width: 29%;
          height: auto;
          background-color: @box-color;
-         margin: .6em;
+         border: 2px solid @header-color;
         padding: .6em;
+        margin: .6em;
         align-items: center;
         justify-content: center;
        
@@ -253,6 +255,7 @@ header {
         }
         img{
             width:80%;
+            border: 2px solid @header-color;
         }
     }
 }
