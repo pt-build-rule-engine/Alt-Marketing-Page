@@ -384,6 +384,7 @@ header .about-us-heading h1 {
 .intro-about-section {
   background-color: #a8bbb0;
   font-family: 'Fira Sans', sans-serif;
+  padding: 1em 0 1em 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
